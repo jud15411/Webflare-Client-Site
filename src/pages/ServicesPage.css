@@ -1,0 +1,126 @@
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.page-header h1 {
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.page-header p {
+    font-size: 1.2em;
+    color: var(--text-secondary);
+}
+
+.services-content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.service-card-header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0 0 10px 0;
+}
+
+.service-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+    min-height: 70px; /* Ensures cards have a similar header height */
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+    flex-grow: 1; 
+}
+
+.service-features li {
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+}
+
+.checkmark {
+    color: var(--primary);
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.service-footer {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.service-price {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+.btn-contact {
+    background-color: var(--primary);
+    color: var(--background);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.btn-contact:hover {
+    opacity: 0.9;
+}
+
+/* Status messages for loading/error states */
+.status-message {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.2em;
+    padding: 40px;
+}
+.status-message.error {
+    color: #f87171; /* Light red */
+}

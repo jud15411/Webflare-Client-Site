@@ -1,0 +1,62 @@
+.portfolio-grid {
+    display: grid;
+    /* --- UPDATED: Smaller minimum and maximum card size --- */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+    gap: 30px;
+    justify-content: center; /* --- NEW: Centers the grid if there's extra space --- */
+}
+
+.portfolio-card {
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* --- REMOVED: aspect-ratio is no longer needed --- */
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: auto; /* --- UPDATED: Let the image's natural height dictate the card's height --- */
+    display: block;
+    transition: transform 0.3s ease;
+    
+    /* --- REMOVED: padding and object-fit are no longer needed --- */
+}
+
+.portfolio-card:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(17, 24, 39, 0.9), transparent);
+    color: white;
+    padding: 40px 20px 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-info {
+    opacity: 1;
+}
+
+.portfolio-info h3 {
+    font-size: 1.5em;
+    margin: 0 0 5px 0;
+}
+
+.portfolio-info span {
+    font-size: 0.9em;
+    color: var(--text-secondary);
+}

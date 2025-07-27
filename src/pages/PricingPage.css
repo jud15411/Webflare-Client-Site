@@ -1,0 +1,122 @@
+/* --- NEW: Section Styles --- */
+.featured-section, .standard-section {
+    margin-bottom: 60px;
+}
+
+.featured-section h2, .standard-section h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--text-primary);
+}
+
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.pricing-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card.featured {
+    border-color: var(--primary);
+    transform: scale(1.05); /* Make it slightly larger */
+}
+
+.featured-badge {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    background-color: var(--primary);
+    color: var(--background);
+    padding: 8px 40px;
+    font-size: 0.9em;
+    font-weight: bold;
+    transform: rotate(45deg) translate(25%, -25%);
+    transform-origin: top right;
+    width: 170px;
+}
+
+.pricing-card h3 {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin: 15px 0;
+    color: var(--text-primary);
+}
+
+.tier-description {
+    color: var(--text-secondary);
+    min-height: 4.5em;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 3em;
+    font-weight: 800;
+    margin: 20px 0;
+    color: var(--text-primary);
+}
+
+.price .frequency {
+    font-size: 0.4em;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    flex-grow: 1;
+}
+
+.features-list li {
+    margin-bottom: 12px;
+    color: var(--text-secondary);
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--background);
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.pricing-card:not(.featured) .btn-primary {
+    background-color: var(--surface);
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary);
+    color: var(--background) !important;
+    opacity: 0.9;
+}

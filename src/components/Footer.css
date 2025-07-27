@@ -1,0 +1,54 @@
+.footer {
+    background-color: var(--surface); /* Use the slightly lighter dark color */
+    border-top: 1px solid var(--border);
+    padding: 50px 5%;
+    color: var(--text-secondary); /* Use the secondary text color for paragraphs */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    color: var(--text-primary); /* Use the primary text color for headings */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+    display: block;
+    transition: color 0.2s ease;
+}
+
+.footer-section ul li a:hover {
+    color: var(--primary); /* Use the primary accent color on hover */
+}
+
+.social-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: var(--text-secondary);
+    transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}

@@ -1,0 +1,167 @@
+/* --- HERO SECTION --- */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px 20px;
+    background-color: var(--background);
+    border-bottom: 1px solid var(--border);
+}
+.hero-title {
+    font-size: 3.5em;
+    font-weight: 800;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    color: var(--text-primary);
+    line-height: 1.2;
+}
+.hero-subtitle {
+    font-size: 1.3em;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    color: var(--text-secondary);
+}
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--background);
+}
+.btn-primary:hover {
+    opacity: 0.9;
+}
+.btn-secondary {
+    background-color: var(--surface);
+    color: var(--text-primary);
+    border-color: var(--border);
+}
+.btn-secondary:hover {
+    background-color: var(--border);
+}
+
+/* --- GENERAL SECTION STYLES --- */
+.home-section {
+    padding: 80px 5%;
+    text-align: center;
+}
+.section-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--text-primary);
+}
+
+/* --- SERVICES OVERVIEW --- */
+.services-overview {
+    background-color: var(--surface);
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.service-preview-card {
+    background: var(--background);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    transition: transform 0.2s;
+}
+.service-preview-card:hover {
+    transform: translateY(-5px);
+}
+.service-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+.service-preview-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.service-preview-card p {
+    color: var(--text-secondary);
+}
+
+/* --- PORTFOLIO PREVIEW --- */
+.portfolio-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.portfolio-preview-card {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.portfolio-preview-card img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.portfolio-preview-card:hover img {
+    transform: scale(1.05);
+}
+.portfolio-preview-card .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    color: white;
+    padding: 40px 20px 20px;
+}
+.overlay h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* --- TESTIMONIALS --- */
+.testimonials-section {
+    background-color: var(--surface);
+}
+.testimonial-card {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background: var(--background);
+    border-left: 5px solid var(--primary);
+    border-radius: 8px;
+}
+.testimonial-card p {
+    font-size: 1.3em;
+    font-style: italic;
+    color: var(--text-secondary);
+    margin: 0 0 20px 0;
+}
+.testimonial-card footer {
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+/* --- CTA SECTION --- */
+.cta-section p {
+    font-size: 1.2em;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
